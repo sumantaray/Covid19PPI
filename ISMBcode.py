@@ -23,5 +23,5 @@ Feature_mat=np.empty(('node','dim'))  #put node = number of nodes, dim= number o
 feature_mat[:] = np.nan
 for p in range('node'):
     feature_mat[p,:]=model.wv[str(p)]
-
-np.savetxt('feature_matrix.csv', feature_mat, delimiter=',')  
+mat1=model.most_similar(str(feature_mat['x']),topn=11314)
+np.savetxt('Node2vec_Prob.csv', mat1, delimiter=',')  
