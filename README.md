@@ -8,7 +8,13 @@ Run  ISMBcode.py script directly on the above adjacency matrix.
 
 The user input for #Number of Features to be selected using the algorithm. 
 
-Output **Feature_Matrix** is the feature representaion of each node. The similarity links are predicted frm this feature matrix.
+Output **Feature_Matrix** is the feature representaion of each node. 
+
+Then Lovain clustering is mployed on Feature_Matrix. 
+
+Three similarity measures are computed on each cluster, then rank aggregation is applied to obtain aggregated neighbor protein list of each SARS-Cov-host protein.
+
+The Predicted indirect interactions between human proteins and SARS-CoV2 proteins are given in **S1** file.
 
 ## Pre-requisites
 
